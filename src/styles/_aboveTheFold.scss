@@ -1,0 +1,54 @@
+
+.banner{
+    height: 100vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: $primaryColorBlue;
+    padding: 50px;
+    @media  (max-width: $breakpointTablet)  {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        // padding: 99px 47px 11px 20px;
+        padding-top: 100px;
+        align-items: center;
+  }
+  .banner-text{
+    opacity: 0;
+    transform: translateY(50px);
+    padding-top: 50px;
+  }
+    p{
+        text-shadow: -5px 4px 0px #f278b6cc;
+        font-size: calc(45px + (130 - 45) * ((100vw - 300px) / (1600 - 300)));
+        font-weight: 900;
+        // line-height: 150px;
+        font-family: system-ui;
+        // padding-right: 50px;
+        @media (max-width: $breakpointMobile) {
+            letter-spacing: normal;
+            padding-right: 0px;
+            // line-height: 90px;
+        }
+    }
+    .banner-img{
+        max-width: 80vw;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(50px);
+
+    display: flex;
+    justify-content: center;
+        @media(max-width: $breakpointMobile){
+            height: auto;
+        }
+    }
+    img{
+        height: 75vh;
+    }
+}
+
+
+
+
+

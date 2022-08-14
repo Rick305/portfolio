@@ -1,0 +1,20 @@
+{
+  "homepage": "https://rick305.github.io/portfolio-project/",
+  "name": "portfolio-project",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url YOUR_REPO_NAME",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.6.0"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "sass": "^1.52.3"
+  }
+}
